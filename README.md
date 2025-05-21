@@ -68,3 +68,38 @@ This section has moved here: [https://vitejs.dev/guide/build.html](https://vitej
 ### Troubleshooting
 
 This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
+
+# EDECS PLAN
+
+## Project Setup
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Setup Environment Variables:
+   - Copy `.env.example` to a new file named `.env`
+   - Fill in your Firebase configuration values in the `.env` file
+   - Make sure to have the following environment variables set:
+     - VITE_FIREBASE_API_KEY
+     - VITE_FIREBASE_AUTH_DOMAIN
+     - VITE_FIREBASE_PROJECT_ID
+     - VITE_FIREBASE_STORAGE_BUCKET
+     - VITE_FIREBASE_MESSAGING_SENDER_ID
+     - VITE_FIREBASE_APP_ID
+     - VITE_FIREBASE_DATABASE_URL
+
+4. Start the development server:
+```bash
+npm start
+```
+
+## Project Structure
+
+- `src/` - Contains all source code
+  - `components/` - Reusable React components
+  - `styles/` - CSS and styling files
+- `.env` - Environment variables (do not commit this file)
+- `.env.example` - Example environment variables template
