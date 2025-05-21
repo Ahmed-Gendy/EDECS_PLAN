@@ -8,4 +8,11 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
+  build: {
+    outDir: 'dist',
+    sourcemap: true
+  },
+  server: {
+    port: 3000
+  }
 })
