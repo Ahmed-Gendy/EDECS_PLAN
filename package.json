@@ -6,13 +6,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
-    "@vitejs/plugin-react": "^4.0.0",
     "bootstrap": "^5.3.6",
     "firebase": "^11.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.6.0",
-    "vite": "^4.3.9",
     "web-vitals": "^3.1.0"
   },
   "overrides": {
@@ -21,7 +19,8 @@
     "postcss": "^8.4.31"
   },
   "scripts": {
-    "start": "BROWSER=none WDS_SOCKET_PORT=0 vite --port 3000",
+    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest"
@@ -45,8 +44,9 @@
     ]
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
     "jsdom": "^22.1.0",
-    "vite": "^4.5.9",
+    "vite": "^4.3.9",
     "vitest": "^0.34.6"
   }
 }
